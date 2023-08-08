@@ -1,0 +1,413 @@
+/* colors:
+  #66ccff (bleu clair)
+  #ff66ff (rose)
+  #0066cc (bleur foncé)  
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: "poppins";
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "poppins";
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 1920px;
+}
+
+.titre_presentation {
+  font-size: 3em;
+  text-align: center;
+  position: relative;
+}
+
+/* HEADER */
+
+header {
+  margin-top: 20px;
+  position: absolute;
+  width: 100%;
+  height: 120px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.container .logo {
+  width: 250px;
+}
+
+.container .logo img {
+  width: 250px;
+}
+
+.container .onglet {
+  display: flex;
+  justify-content: center;
+}
+
+.container .onglet ul {
+  list-style: none;
+  display: flex;
+}
+
+.container .onglet ul a {
+  font-size: 1.45em;
+  border-radius: 50px;
+  color: #b60000;
+  margin: 0 30px;
+}
+
+.container .onglet ul a:hover {
+  text-decoration: underline;
+}
+
+/* SECTION 1 */
+
+.sec1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/Images/Accueil.jpg);
+}
+
+.sec1 .title {
+  text-align: center;
+  padding-top: 250px;
+  font-size: 8rem;
+}
+
+.sec1 .content {
+  margin-top: -20px;
+  margin-left: 285px;
+  color: #b60000;
+  font-size: 2rem;
+}
+
+.sec1 .content button {
+  margin-top: 70px;
+  position: relative;
+  height: 100px;
+  width: 400px;
+  border-radius: 50px;
+  border: 3px solid #b60000;
+  font-size: 1em;
+  color: #b60000;
+  background-color: white;
+  z-index: 1;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.sec1 .content button::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 400px;
+  border-radius: 50px;
+  background-color: #b60000;
+  top: -2px;
+  left: -2px;
+  transform: translate(-100%);
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.sec1 .content button:hover::before {
+  transform: translate(0);
+}
+
+.sec1 .content button:hover {
+  color: white;
+}
+
+/* SECTION 2 */
+
+.sec2 {
+  color: white;
+  background-image: url(/Images/Formations.jpg);
+  background-position: top left;
+  width: 100%;
+  height: 100vh;
+}
+
+.sec2 .content {
+  width: 100%;
+  display: block;
+}
+
+.sec2 .content .left_top {
+  padding: 0 10px;
+  margin: 10px 0;
+  text-align: center;
+  float: left;
+  width: 50%;
+}
+
+.sec2 .content .left_top h2 {
+  font-size: 3em;
+}
+
+.sec2 .content .left_top h3 {
+  margin-bottom: 5px;
+  font-size: 1.3em;
+}
+
+.separateur {
+  margin-left: 330px;
+  width: 30%;
+  background-color: #b60000;
+  height: 7px;
+  border-radius: 50px;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.sec2 .content .left_top p {
+  line-break: auto;
+  padding: 0 20px;
+  margin: 0 30px;
+}
+
+.sec2 .content .right {
+  margin: -181px 0px;
+  padding: 0px 20px;
+  text-align: center;
+  float: right;
+  width: 50%;
+}
+
+.sec2 .content .right h2 {
+  font-size: 3em;
+}
+
+.sec2 .content .right h3 {
+  font-size: 1.3em;
+}
+
+.sec2 .content .right p {
+  line-break: auto;
+  padding: 0 20px;
+  margin: 0 30px;
+}
+
+.sec2 .content .left_bottom {
+  margin: 5px 0;
+  padding: 0 20px;
+  text-align: center;
+  float: left;
+  width: 50%;
+}
+
+.sec2 .content .left_bottom h2 {
+  font-size: 3em;
+}
+
+.sec2 .content .left_bottom h3 {
+  font-size: 1.3em;
+}
+
+.sec2 .content .left_bottom p {
+  line-break: auto;
+  padding: 0 20px;
+  margin: 0 30px;
+}
+
+/* SECTION 3 */
+
+.sec3 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/Images/Admission.jpg);
+}
+
+.sec3 .content .plus h3 {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.sec3 .content .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.sec3 .content .top .liste {
+  width: 70%;
+  height: 150px;
+  margin: 50px 100px;
+}
+
+.sec3 .content .top .liste ul {
+  list-style: circle;
+}
+
+.sec3 .content .top .liste ul li {
+  font-size: 1.3em;
+}
+
+.sec3 .content .top img {
+  margin-right: 100px;
+  border-radius: 15px;
+  border: #b60000 4px solid;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.705);
+}
+
+.sec3 .content .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.sec3 .content .bottom .liste {
+  margin: 20px 100px;
+}
+
+.sec3 .content .bottom img {
+  width: 50%;
+  margin-left: 100px;
+  border-radius: 15px;
+  border: #b60000 4px solid;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.705);
+}
+
+.sec3 .content .bottom .liste h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.sec3 .content .bottom .liste p {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.sec3 .content .bottom .liste ul {
+  list-style: circle;
+}
+
+.sec3 .content .bottom .liste ul li {
+  font-size: 1.2em;
+  margin: 0 40px;
+}
+
+.sec3 .content .bottom .liste ul li strong {
+  text-decoration: underline #b60000 3px solid;
+}
+
+/* SECTION 4 */
+
+.sec4 {
+  background-image: url(/Images/Nous_contacter.jpg);
+  color: white;
+  width: 100%;
+}
+
+.sec4 .container {
+  margin-top: 40px;
+  padding: 70px;
+}
+
+.sec4 .container .tel,
+.sec4 .container .adresse {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.sec4 .container .tel .icon {
+  width: 45px;
+  height: 43px;
+  margin-right: 10px;
+  background-color: #b60000;
+  border-radius: 10px;
+}
+
+.sec4 .container .adresse .icon {
+  margin-right: 10px;
+  width: 48px;
+  height: 45px;
+  background-color: #b60000;
+  border-radius: 10px;
+}
+
+.sec4 .container .tel .icon i,
+.sec4 .container .adresse .icon i {
+  font-size: 1.8em;
+  margin: 8px;
+}
+
+.sec4 .container .tel h3,
+.sec4 .container .adresse h3 {
+  font-size: 2em;
+  text-decoration: underline;
+}
+
+.sec4 .container .tel a,
+.sec4 .container .adresse a {
+  margin: 10px 20px;
+  font-size: 1.4em;
+  color: #b60000;
+}
+
+.sec4 .container .inscription button {
+  font-size: 1.3em;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: #b60000;
+  color: white;
+  transition: 0.4s;
+}
+
+.sec4 .container .inscription button:hover {
+  background-color: white;
+  border: #b42318 5px solid;
+  color: #b42318;
+}
+
+footer {
+  background-color: rgb(20, 20, 20);
+}
+
+footer p {
+  text-align: center;
+  padding: 5px 10px;
+}
+
+footer p :hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  color: beige;
+  font-size: 13px;
+  position: static;
+  text-align: right;
+  margin-right: 10px;
+}
+
+footer p a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #b42318;
+  border-radius: 15px;
+  border-color: aliceblue;
+  transition: 0.6s;
+}
